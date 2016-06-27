@@ -1,0 +1,122 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 5;
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+#map {
+	padding: 0;
+}
+
+
+path[data-classification="0"] {
+	stroke: rgb(254, 224, 210);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(255, 245, 240);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="1"] {
+	stroke: rgb(252, 187, 161);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(254, 224, 210);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="2"] {
+	stroke: rgb(252, 146, 114);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(252, 187, 161);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="3"] {
+	stroke: rgb(251, 106, 74);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(252, 146, 114);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="4"] {
+	stroke: rgb(239, 59, 44);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(251, 106, 74);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="5"] {
+	stroke: rgb(203, 24, 29);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(239, 59, 44);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="6"] {
+	stroke: rgb(165, 15, 21);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(203, 24, 29);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="7"] {
+	stroke: rgb(103, 0, 13);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(165, 15, 21);
+	fill-opacity: 0.8;
+}
+
+path[data-classification="8"] {
+	stroke: rgb(0, 0, 0);
+	stroke-width: 1pt;
+	stroke-opacity: 0.35;
+	fill: rgb(103, 0, 13);
+	fill-opacity: 0.8;
+}
+/* mouse hover animation */
+
+@keyframes highlight {
+	100% {
+		fill-opacity: 1;
+		stroke-width: 4;
+		stroke: rgb(220, 20, 60);
+	}
+}
+
+@-webkit-keyframes highlight {
+	100% {
+		fill-opacity: 1;
+		stroke-width: 4;
+		stroke: rgb(220, 20, 60);
+	}
+}
+
+path:hover {
+	cursor: pointer;
+	animation-duration: 0.2s;
+	animation-name: highlight;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-name: highlight;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.headerline {
+	color: #b80525;
+	!important font-size: 60px;
+	!important font-family: Georgia, 'Times New Roman', Times, serif;
+	!important
+}
